@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <link rel="stylesheet" href="/css/list.css">
+  <title>列表</title>
+</head>
+<body>
+  <div id="container">
+    <div id="cert-container">
+        <a id="cert" href="/cert/server.crt">第一次请安装证书</a>
+    </div>
+
+      <ul id="list-container">
+        <% ipas.forEach(function(ipa){%>
+          <li id="item">
+            <div id="item-container">
+              <div id="item-info">
+                <div id="item-title"><%=ipa.displayName%>_v<%=ipa.version%>(<%=ipa.buildVersion%>)</div>
+                  <div id="item-content"><%=ipa.update_time%></div>
+              </div>
+              <div id="item-download">
+                  <a id="download" href="itms-services://?action=download-manifest&url=<%=manifestUrl%><%=ipa.id%>">Download</a>
+              </div>
+                
+            </div>
+            <div id="line"></div>
+          </li>
+        <%})%>
+      </ul>
+
+    </div>
+</body>
+</html>

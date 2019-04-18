@@ -1,0 +1,30 @@
+{
+  "name": "ipa_manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node bin/WWW",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mingle Chang",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-onerror": "^4.1.0",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.5",
+    "koa-body": "^4.1.0",
+    "koa-ejs": "^4.2.0",
+    "compressing": "^1.4.0",
+    "app-info-parser": "^0.2.0",
+    "sequelize": "^5.1.0",
+    "sqlite3": "^4.0.6"
+  }
+}

@@ -1,0 +1,78 @@
+html {
+    font-size: 100%;
+}
+body {
+    font-size: 1em;
+    padding: 0em;
+    margin: 0em;
+    box-align: center;
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+#container {
+    margin: auto;
+    background-color: rgb(228, 226, 226);
+    width: 100em;
+    max-width: 100%;
+    align-content: center;
+}
+#cert-container {
+    background-color: red;
+    padding: 0.5em;
+    margin: 0em;
+}
+#cert {
+    color: white;
+}
+#list-container {
+    padding: 0em;
+    margin: 0em;
+}
+#list {
+    padding: 0em;
+    margin: 0em;
+    width: 100%;
+}
+#item {
+    padding: 0em;
+    margin: 0em;
+}
+#item-container {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+#item-info {
+    width: 100%;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+#item-title {
+    color: rgb(51, 51, 51);
+    font-size: 1.1em;
+    margin-top: 0.5em;
+}
+#item-content {
+    font-size: 0.65em;
+    margin-bottom: 0.5em;
+    color: rgb(51, 51, 51);
+}
+#item-download {
+    color: aqua;
+    text-align: right;
+}
+#download {
+    color: red;
+    text-align: right;
+}
+#line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(240, 240, 240);
+}
