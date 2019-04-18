@@ -76,3 +76,4 @@ typings/
 .fusebox/
 *.sqlite
 ipa/
+package-lock.json
