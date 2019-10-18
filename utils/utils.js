@@ -119,6 +119,10 @@ class Utils {
     }
 
     static httpBaseUrl() {
+        if (process.env == 'production') {
+            const baseUrl = 'http://' + config.host;
+            return baseUrl;
+        }
         const baseUrl = 'http://' + config.host + ':' + config.port;
         return baseUrl;
     }
