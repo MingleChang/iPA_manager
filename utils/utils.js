@@ -124,6 +124,10 @@ class Utils {
     }
 
     static httpsBaseUrl() {
+        if (process.env == 'production') {
+            const baseUrl = 'https://' + config.host;
+            return baseUrl;
+        }
         const baseUrl = 'https://' + config.host + ':' + config.ports;
         return baseUrl;
     }
