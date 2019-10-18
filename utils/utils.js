@@ -119,21 +119,14 @@ class Utils {
     }
 
     static httpBaseUrl() {
-        if (process.env == 'production') {
-            const baseUrl = 'http://' + config.host;
-            return baseUrl;
-        }
-        const baseUrl = 'http://' + config.host + ':' + config.port;
+        
+        const baseUrl = 'http://' + config.host;
         return baseUrl;
     }
 
     static httpsBaseUrl() {
-        if (process.env == 'production') {
-            const baseUrl = 'https://' + config.host;
+        const baseUrl = 'https://' + config.host;
             return baseUrl;
-        }
-        const baseUrl = 'https://' + config.host + ':' + config.ports;
-        return baseUrl;
     }
 
     static getManifestPlistWithIpa(ipaFile) {
