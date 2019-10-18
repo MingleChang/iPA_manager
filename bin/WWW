@@ -20,15 +20,15 @@ const crtPath = path.join(__dirname, '../public/cert/server.crt');
 /**
  * Create HTTPS server.
  */
-const options = {
-  key: fs.readFileSync(keyPath),
-  cert: fs.readFileSync(crtPath),
-}
-const servers = https.createServer(options, app.callback());
+// const options = {
+//   key: fs.readFileSync(keyPath),
+//   cert: fs.readFileSync(crtPath),
+// }
+// const servers = https.createServer(options, app.callback());
 
-servers.listen(config.ports);
-servers.on('error', onError);
-servers.on('listening', onListening);
+// servers.listen(config.ports);
+// servers.on('error', onError);
+// servers.on('listening', onListening);
 
 /**
  * Create HTTP server.
