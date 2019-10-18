@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node bin/WWW",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "node bin/WWW --env production"
   },
   "author": "Mingle Chang",
   "license": "MIT",
