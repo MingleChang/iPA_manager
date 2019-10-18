@@ -1,7 +1,7 @@
 const config = {
-    host: '172.16.40.216',
-    port: 8000,//http端口
-    ports:8001,//https端口
+    host: (process.env.NODE_ENV=='production')?'ipa.minglechang.com':'172.16.40.216',
+    port: (process.env.NODE_ENV=='production')?9001:8000,//http端口
+    ports: (process.env.NODE_ENV=='production')?9002:8001,//https端口
 
     sqlite_config: {
         database: 'ipa',
